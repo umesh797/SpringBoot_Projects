@@ -1,0 +1,54 @@
+.images{
+    background-image: url("../banner/LrITsWf2.jpg");
+    background-size:100% 100%;
+    background-attachment: fixed;
+
+    height:666px;
+    width: 100%;
+    
+}
+
+.header{
+    padding-top:250px;
+     box-sizing: border-box;
+    
+}
+
+.header p{
+    font-size: 34px;
+    
+    
+}
+
+.header h1{
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.birdssection{
+    height: 600px;
+    padding: 80px 0px 60px;
+}
+
+.rowseting{
+    margin: 20px 10px 20px;
+}
+
+.fishsection{
+    height: 600px;
+    padding: 60px 0px 60px;
+}
+
+.animalsection{
+    height: 600px;
+    padding: 60px 0px 160px;
+}
+
+.footer{
+    position: relative;
+    height: 50px;
+    background-color:darkslategrey;
+    margin-bottom: 0px
+    
+}
+

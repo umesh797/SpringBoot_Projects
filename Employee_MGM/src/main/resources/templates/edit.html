@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body bgcolor="gray">
+
+<div class="container">
+          
+          <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+              <div class="container">
+                  <a href="" class="navbar-brand"><h3 class="text-warning font-weight-bold">Employee MGM System</h3></a>
+                  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navcollapse">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <div class="collapse navbar-collapse" id="navcollapse">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item"><a href="/home" class="nav-link text-warning">Home</a></li>
+                          
+                          <li class="nav-item"><a href="/register" class="nav-link text-warning">Register</a></li>
+                          
+                          <li class="nav-item"><a href="/showEmp" class="nav-link text-warning">Show Employee</a></li>
+                          
+                          
+                      </ul>
+                  </div>
+              </div>
+              
+          </nav>
+          
+          
+        
+          
+      </div>
+<div class="container birdssection">
+<h2 ALIGN="CENTER">Edit form</h2>
+
+<form action="/editEmp" th:object="${Empl}" method="post">
+<table border="0" align="center">
+<tbody>
+
+<tr>
+<td><label for="id">Id: </label></td>
+<td><input id="id" maxlength="50" name="id" type="text" th:field="*{id}" readonly="readonly" /></td>
+</tr>
+
+<tr>
+<td><label for="name">Name: </label></td>
+<td><input id="name" maxlength="50" name="name" type="text" th:field="*{name}" /></td>
+</tr>
+
+<tr>
+<td><label for="sal">Salary: </label></td>
+<td><input id="sal" maxlength="50" name="sal" type="text" th:field="*{sal}" /></td>
+</tr>
+
+<tr>
+<td><label for="dsig">Designation: </label></td>
+<td><input id="dsig" maxlength="50" name="dsig" type="text" th:field="*{dsig}" /></td>
+</tr>
+
+
+
+<tr>
+<td></td><td align="right"><input name="Submit" type="Submit" value="Edit" class="btn-primary" /></td>
+</tr>
+
+</tbody>
+</table>
+</form>
+<h1 th:text="${msg}"></h1>
+</div>
+</body>
+</html>
